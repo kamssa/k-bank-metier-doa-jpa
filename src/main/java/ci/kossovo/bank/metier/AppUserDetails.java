@@ -7,9 +7,9 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import ci.kossovo.bank.dao.UserRepository;
 import ci.kossovo.bank.entites.Role;
 import ci.kossovo.bank.entites.User;
-import ci.kossovo.bank.repositories.UserRepository;
 
 
 public class AppUserDetails implements UserDetails {

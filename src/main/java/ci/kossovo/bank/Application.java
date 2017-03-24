@@ -11,8 +11,8 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
+import ci.kossovo.bank.dao.ClientRepository;
 import ci.kossovo.bank.entites.Client;
-import ci.kossovo.bank.repositories.ClientRepository;
 
 
 

@@ -1,4 +1,4 @@
-package ci.kossovo.bank.repositories;
+package ci.kossovo.bank.dao;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

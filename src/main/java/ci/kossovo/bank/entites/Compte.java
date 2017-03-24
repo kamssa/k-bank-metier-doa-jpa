@@ -26,9 +26,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 @JsonSubTypes({ @Type(name = "CC", value = CompteCourant.class), @Type(name = "CE", value = CompteEpargne.class) })
 @XmlSeeAlso({ CompteCourant.class, CompteEpargne.class })
 public abstract class Compte implements Serializable {
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	@Id
 	private String codeCompte;
@@ -44,13 +42,11 @@ public abstract class Compte implements Serializable {
 	private Employe employe;
 	@Column(name = "CODE_EMP", insertable = false, updatable = false)
 	private long idEmp;
+	
 
-	/*
-	 * @OneToMany(mappedBy="compte") private Collection<Operation> operations;
-	 */
 	public Compte() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Compte(String codeCompte, Date dateCreation, Double solde) {

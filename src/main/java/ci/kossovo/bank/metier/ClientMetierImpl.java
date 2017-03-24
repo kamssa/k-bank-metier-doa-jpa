@@ -5,22 +5,22 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ci.kossovo.bank.dao.ClientRepository;
 import ci.kossovo.bank.entites.Client;
-import ci.kossovo.bank.repositories.ClientRepository;
 @Service
-public class ClientMetier implements IClientMetier{
+public class ClientMetierImpl implements IClientMetier{
 
 @Autowired
  ClientRepository clientRepository;
 	@Override
-	public Client saveClient(Client c) {
-		// TODO Auto-generated method stub
-		return clientRepository.save(c);
+	public Client saveClient(Client client) {
+		//ajout d'un client
+		return clientRepository.save(client);
 	}
 
 	@Override
 	public List<Client> getAllClients() {
-		// TODO Auto-generated method stub
+		// affiche tous les clients
 		return clientRepository.findAll();
 	}
 

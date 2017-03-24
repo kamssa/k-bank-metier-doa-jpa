@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import ci.kossovo.bank.dao.UserRepository;
 import ci.kossovo.bank.entites.User;
-import ci.kossovo.bank.repositories.UserRepository;
 
 @Service
 public class AppUserDetailsService implements UserDetailsService {

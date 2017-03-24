@@ -1,10 +1,10 @@
-/*package ci.kossovo.bank.config;
+package ci.kossovo.bank.config;
 
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.orm.jpa.EntityScan;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -13,10 +13,10 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-	@EnableJpaRepositories(basePackages = { "ci.kossovo.bank.repositories", "ci.kossovo.bank.securite"})
+	@EnableJpaRepositories(basePackages = { "ci.kossovo.bank.dao"})
 	@EnableAutoConfiguration
 	@ComponentScan(basePackages = { "ci.kossovo.bank" })
-	@EntityScan(basePackages = { "ci.kossovo.bank.entites", "ci.kossovo.bank.securite"})
+	@EntityScan(basePackages = { "ci.kossovo.bank.entites"})
 	@EnableTransactionManagement
 	public class DomainAndPersistenceConfig {
 
@@ -45,4 +45,3 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 	}
 
 
-*/
